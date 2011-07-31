@@ -1,6 +1,11 @@
         function showProjects(){
             projects_page = '';
-            var projects = {'TwitGrep' : ["A demo Node.js app that provides a shared twitter search interface and realtime feed viewer, with a control interface that works over http or tcp.", 'http://github.com/ryanjarvinen/twitgrep'],
+            var projects = {
+                        'eventbrite.github.com' : ["GitHub pages covering Eventbrite API documentation, and related open source projects.", 'http://eventbrite.github.com'],
+                        'eventbrite.npm' : ["A nodejs / npm javascript module for the Eventbrite API.", 'http://github.com/ryanjarvinen/eventbrite.npm'],
+                        'Eventbrite.jquery.js' : ["A jQuery-based javascript client for the Eventbrite API.", 'http://github.com/ryanjarvinen/Eventbrite.jquery.js'],
+                        'eventbrite.php' : ["A PHP client for the Eventbrite API.", 'http://github.com/ryanjarvinen/eventbrite.php'],
+                        'TwitGrep' : ["A demo Node.js app that provides a shared twitter search interface and realtime feed viewer, with a control interface that works over http or tcp.", 'http://github.com/ryanjarvinen/twitgrep'],
                         'Restaurant Adventure' : ["A demo couchdb app that combines Google Maps, Yelp API, OAuth, and Facebook Connect, with a couch-db back-end.", 'http://github.com/ryanjarvinen/restaurant-adventure'] };
             for( proj in projects )
             {
