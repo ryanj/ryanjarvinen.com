@@ -1,0 +1,62 @@
+<audio id="multiaudio1" src="/test/audio/flute_c_long_01.wav" autobuffer="autobuffer"></audio>
+<audio id="multiaudio2" src="/test/audio/piano_chord.wav" autobuffer="autobuffer"></audio>
+<audio id="multiaudio3" src="/test/audio/synth_vox.wav" autobuffer="autobuffer"></audio>
+<audio id="multiaudio4" src="/test/audio/shimmer.wav" autobuffer="autobuffer"></audio>
+<audio id="multiaudio5" src="/test/audio/sweep.wav" autobuffer="autobuffer"></audio>
+
+<a href="javascript:play_multi_sound('multiaudio1');">Flute</a><br />
+<a href="javascript:play_multi_sound('multiaudio2');">Piano Chord</a><br />
+<a href="javascript:play_multi_sound('multiaudio3');">Synth Vox</a><br />
+<a href="javascript:play_multi_sound('multiaudio4');">Shimmer</a><br />
+<a href="javascript:play_multi_sound('multiaudio5');">Sweep</a><br />
+
+<script type="text/javascript">
+    var channel_max = 10;                                       // number of channels
+    audiochannels = new Array();
+    for (a=0;a<channel_max;a++) {                                   // prepare the channels
+        audiochannels[a] = new Array();
+        audiochannels[a]['channel'] = new Audio();                      // create a new audio object
+        audiochannels[a]['finished'] = -1;                          // expected end time for this channel
+    }
+    function play_multi_sound(s) {
+        for (a=0;a<audiochannels.length;a++) {
+            thistime = new Date();
+            if (audiochannels[a]['finished'] < thistime.getTime()) {            // is this channel finished?
+                audiochannels[a]['finished'] = thistime.getTime() + document.getElementById(s).duration*1000;
+                audiochannels[a]['channel'].src = document.getElementById(s).src;
+                audiochannels[a]['channel'].load();
+                audiochannels[a]['channel'].play();
+                break;
+            }
+        }
+    }
+</script>
+
+<hr/>
+
+
+<audio id="audiotag1" src="/test/audio/flute_c_long_01.wav" autobuffer="autobuffer">
+<a href="javascript:play_single_sound();">Play 5-sec sound on single channel</a>
+<script type="text/javascript">
+    function play_single_sound() {
+        document.getElementById('audiotag1').play();
+    }
+</script>
+
+<hr/>
+        <script src="/js/jquery.audiotag.js" type="text/javascript"></script>
+        <script src="/js/jquery.js" type="text/javascript"></script>
+
+        <div class="filename">Filename: <span></span></div> 
+        <div class="duration">Duration: <span></span></div> 
+        
+        <p>&nbsp;</p> 
+        <p><strong>Please wait 30 secondes, until this is loaded</strong></p> 
+        
+        <div> 
+            <a href="#" class="play buttons">play</a> 
+            <a href="#" class="pause buttons">pause</a> 
+            <a href="#" class="playatTime buttons">play at 35 secondes</a> 
+            <a href="#" class="volumestop buttons">Volume to 0</a> 
+            <a href="#" class="volumeMax buttons">Volume open</a> 
+        </div>  

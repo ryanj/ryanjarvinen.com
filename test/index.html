@@ -1,0 +1,54 @@
+<script type='text/css'>
+body {
+    background: url(background.png) repeat 5% 5%;
+}
+#midground {
+    background: url(midground.png) repeat 20% 20%;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 997;
+}
+#foreground {
+    background: url(foreground.png) repeat 90% 110%;
+    position: absolute;
+}
+
+
+#top_foreground {
+    background: url(foreground.png) repeat 90% 110%;
+    background: transparent url("vines-front.png") 300% 0 repeat-x;
+    position: absolute;
+}
+#top_midground {
+    background: url(midground.png) repeat 20% 20%;
+    background: transparent url("vines-mid.png") 70% 0 repeat-x;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 997;
+}
+#top_background {
+    background: url(images/foreground.png) repeat 90% 110%;
+    background: transparent url("body.gif") left bottom repeat-x;
+    position: absolute;
+}
+</script>
+
+<body>
+    <p>
+        <a href='test/audio'>audio tests</a>
+    </p>
+    <p>
+        <a href='test/motion'>motion tests</a>
+    </p>
+    <p>
+        <a href='test/onslaught/Onslaught.html'>test onslaught</a>
+    </p>
+    <div id="foreground"></div>
+    <div id="midground"></div>
+    <div id="top_foreground"></div>
+    <div id="top_midground"></div>
+    <div id="top_background"></div>
+    <div id="bottom_foreground"></div>
+    <div id="bottom_midground"></div>
+    <div id="bottom_background"></div>
+</body>

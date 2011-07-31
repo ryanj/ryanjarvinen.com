@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <link rel='alternate' type="application/pdf" media='print' href='/resume/ryan_jarvinen-resume.pdf'>
+  <link rel="stylesheet" type="text/css" media="print" href="/resume/print.css" />
+
+  <style type="text/css">
+    li { margin-bottom:0.2em; }
+    h1.name {margin:0em; padding-left:0.5em; padding-top: 0.5em; font-size:1.35em; font-stretch:wider; }
+    ul {list-style: none outside; position:relative; left:0em; padding-left:0em; margin-top:0em; margin-bottom:0em;}
+    ul.contact_information { margin-left:0.8em;}
+    ul.contact_information li {padding-right:3em; display:inline;}
+    ul.contact_information li.linkedin_profile {padding-right:5em;float:right;}
+    ul.contact_information .profile_img {position:absolute; height:50px; width:50px; bottom:0px;right:8px;}
+    ul.technical_skills li {margin-top:0.3em; margin-bottom:0.2em;}
+    ul.positions li {margin-top:0.3em; margin-bottom:0.2em;}
+    ul.position_highlights li {list-style-type: disc; position:relative; margin-left:2em; margin-top:0.2em;}
+    span.skillset {font-weight:bold;}
+    span.position_title {font-weight:bold;}
+    dl {padding: 0em 0.8em;margin: 0em; }
+    dt {margin:0em; font-weight:bold; text-transform:uppercase; }
+    dd {margin-left:1.3em; margin-bottom:1em;}
+    body {font-family: sans-serif; margin:0em;}
+    dd.degree {font-weight:bold; margin-bottom:0em;}
+    div#resume { display: block; margin-top:0em; margin-left:auto; margin-right:auto; width:40em; }
+    ul.contact_information {font-size:smaller;}
+    section#resume_details {font-size:smaller; }
+    canvas#resume_background_image {width:40em; height:auto; z-index:-1; position:absolute;}
+    header hr {margin-left:0.7em; margin-right:0.7em;}
+    a { color:black; text-decoration:none}
+    a:hover { text-decoration:underline; }
+    #resume {
+      border: #CCC solid 0.1em;
+      border-radius:0.5em;
+      -moz-border-radius:0.5em;
+      background: -moz-linear-gradient( center top,
+              rgb(255,255,255) 0%,
+              rgb(200,200,200) 0.3%,
+              rgb(220,220,220) 5%,
+              rgb(230,230,230) 10%,
+              rgb(240,240,240) 30%,
+              rgb(255,255,255) 95%,
+              rgb(240,240,240) 100%
+      );
+      background: -webkit-gradient(linear, left top, left bottom, 
+              color-stop(0.0, rgb(255,255,255)), 
+              color-stop(0.003, rgb(200,200,200)), 
+              color-stop(0.05, rgb(220,220,220)), 
+              color-stop(0.1, rgb(230,230,230)), 
+              color-stop(0.3, rgb(240,240,240)),
+              color-stop(0.95, rgb(255,255,255)),
+              color-stop(1.0, rgb(240,240,240))
+      );
+    }
+  </style>
+  <script type="text/javascript">
+    //a canvas drawing for our resume background
+    function draw_background_gradient()
+    {
+      var resume_canvas = document.getElementById('resume_background_image').getContext('2d');
+      var gradient = resume_canvas.createLinearGradient(0,0,0,260);
+      gradient.addColorStop(0, "#FFFFFF");
+      gradient.addColorStop(0.02, "#DDDDDD");
+      gradient.addColorStop(0.2, "#EEEEEE");
+      gradient.addColorStop(0.4, "#EFEFEF");
+      gradient.addColorStop(1, "#FFFFFF");
+      resume_canvas.fillStyle=gradient;
+      resume_canvas.fillRect(0,0,800,260);
+    }
+  </script>
+
+  <title>
+    RYAN JARVINEN - RESUME
+  </title>
+</head>
+
+<body>
+<div id='resume'>
+
+<header>
+<h1 class='name'><a href='http://ryanjarvinen.com'>RYAN JARVINEN</a></h1>
+<ul class='contact_information'>
+  <li class='current_address'><span class='location'>San Francisco Bay / Oakland, CA</span></li>
+  <li class='linkedin_profile'>
+    <a href="http://www.LinkedIn.com/in/ryanjarvinen">LinkedIn.com/in/ryanjarvinen</a> <a class="profile_img" href='http://ryanjarvinen.com'><img src='http://www.gravatar.com/avatar/ee8fbe2cda4f05ef6dea595ced8f6e1a?s=50'/></a>
+  </li>
+</ul>
+<hr />
+</header>
+
+<section id="resume_details">
+<dl>
+  <dt>Career Summary</dt>
+  <dd>I enjoy working on projects that not only make use of open source tools and open standards, but also contribute back to the community at large, helping to shape the future of how we communicate.  I'm especially interested in web mashups, APIs, and highly concurrent event-driven applications.  See my website for more info: <a href="http://ryanjarvinen.com/">ryanjarvinen.com</a></p></dd>
+
+  <dt>Technical Skills</dt>
+  <dd>
+    <ul class='technical_skills'>
+      <li><span class='skillset'>Languages:</span> Ruby, JavaScript, Python, PHP, Java, UML, Lisp, C++, C, Shell Scripting, LabVIEW, Scheme, Assembly (MIPS), and Spanish.</li>
+      <li><span class='skillset'>Experience:</span> Cloud computing and virtual servers, Search System design (SOLR/Lucene), Caching system design (memcached, squid), UI and UX design, project management, process queues, message queues, graphic arts, geo-tagging and location-based search, technical writing, authentication and authorization control tools and design, systems administration, LAMP, <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fryanjarvinen.com%2Fresume%2Findex.html;verbose=1">HTML5</a>, SQL, NoSQL, and more.</li> 
+      <li><span class='skillset'>Favorite Frameworks, Libraries, Tools, &amp; Toolkits:</span> jQuery, Node.js, CouchDB, Sinatra, Sammy.js, Redis, Django, Ruby on Rails, Firebug, curl, Google Maps, Wordpress.</li>
+      <li><span class='skillset'>Leadership:</span> Started <a href="http://www.meetup.com/sacruby/">Sacramento's Ruby User Brigade</a>, a user group dedicated to studying emerging web development technologies and services.</li>
+      <li><span class='skillset'>Academic Subjects:</span> Distributed Systems, Operating System Design, Intelligent Systems, <a href="http://ryanjarvinen.com/resume/I-Scan%20Project%20-lcf8May.pdf">Senior Project (sensorweb dev for NASA)</a>, Intro to Logic Design, Database Management and File Organization.</li>
+      <li><span class='skillset'>Meta:</span> GTD, SCRUM, Agile, REST, design patterns, automation, asynch, event-driven, web services, tags, contexts, good people, interface design, open source, augmented reality, DIY projects, open government, arduino, music, fun.</li>
+    </ul>
+  </dd>
+  
+  <dt>Work Experience</dt>
+  <dd>
+    <ul class='positions'>
+      <li>
+        <span class='position_title'>Developer Advocate</span> - <span class='employer'><a href="http://eventbrite.com">Eventbrite</a></span> in <span class='location'>San Francisco, CA</span> <time datetime="2011-03-22">(3/2011-current)</time>.  I've recently joined the team at Eventbrite!  I'm really excited about this opportunity to help promote their developer platform, and to demonstrate a lot of great new ways to use the Eventbrite API.</li>
+      <li>
+        <span class='position_title'>Senior Software Engineer</span> - <span class='employer'><a href="http://secondlife.com/whatis/">Linden Lab</a></span> in <span class='location'>San Francisco, CA</span> <time datetime="2008-08-11">(8/2008-6/2010)</time>. At Linden Lab (creators of SecondLife, the world's largest open-ended 3D virtual world), I worked on Customer Lifecycle Management (registration, billing systems, account upgrades, affiliate programs) and briefly on the Search team.  I developed web-services, web applications and toolkits, and dealt with large-scale deployments and high-volume traffic.
+        <ul class='position_highlights'>
+          <li>I translated requirements from the product team into prioritized technical roadmaps and deliverables. Then, followed through by getting the project through each stage of implementation, including: development, internationalization, test plan delivery to QA team, staging and deployment, test automation, A/B testing and metrics validation, documentation, postmortem reviews, and more.</li>
+          <li>I administered and maintained our in-house A/B testing framework, while collaborating with product owners and data warehouse teams to identify and track success metrics, and to monitor performance of production web services / features.</li>
+          <li>I made major improvements to the registration API and the billing system, and used those new features to build an improved registration workflow that resulted in a 20% increase in monetization for new users.</li>
+          <li>I helped lead automation of concurrent cloud-based cross-browser testing to quickly validate new features and workflows, minimizing the turn-around time for testing by extending and optimizing our in-house framework.  We were the first group with automated deployment and regression testing, and a continuous integration / build system.</li> 
+        </ul>
+      </li>
+      <li>
+        <span class='position_title'>Software Engineer</span> - <span class='employer'>Earfl Inc.</span> in <span class='location'>Berkeley, CA</span>. <time datetime="2007-11-01">(11/2007-8/2008)</time>. While at earfl, I worked with a small team to develop a web-based audio hosting platform and social hub. We built a suite of content creation and sharing tools mixing in services from EC2, S3, flickr, google maps, facebook, and youtube. Much of our site was designed using javascript widgets that used our API as a dataservices layer.
+        <ul class='position_highlights'>
+          <li>We provided a RESTful API and a ruby gem that allowed developers to quickly integrate with our service to add dynamic audio content to their sites.</li>
+          <li>We offered several data collection services, including web-based recording (via flash widgets), SIP calls, as well as traditional PTSN dial-in support (and phone number provisioning); enabling communities to crowdsource their content collection and distribution.</li>
+        </ul>
+      </li>
+      <li>
+        <span class='position_title'>Developer / PM</span> - <span class='employer'>Invision Design and Development Group</span> in <span class='location'>Sacramento, CA</span> <time datetime="2008-03-01">(3/2007-10/2007)</time>. At InvisionDDG's office in Sacramento I produced project estimates (bids), met with clients, defined project timelines, and wrote a lot of code. We focused on building community and/or service oriented web applications for clients using Ruby on Rails, Django, and trac.
+      </li>
+      <li>
+        <span class='position_title'>Lead Developer / Site Architect</span> - at <span class='employer'><a href="http://www.leadingresources.com/">Leading Resources Inc.</a></span> in <span class='location'>Sacramento, CA</span> <time datetime="2005-06-01">(6/2005-1/2007)</time>.  My work at LRI involved leading a small team of web developers.  I wrote up project schedules, defined milestones, and developed a suite of web applications designed to bring our advancements in team-building and social-networking to the web.
+        <ul class='position_highlights'>
+          <li>Wrote an RBAC authentication and authorization system for RoR and established single sign-on accross our web systems; allowing tracking of users, and cross-promotion of services and features.</li>
+          <li>Ported existing web services (from PHP to Ruby), and successfully migrated legacy client data.</li>
+        </ul>
+      </li>
+      <li>
+        <span class='position_title'>Student Intern</span> - at <span class='employer'><a href="http://agilent.com">Agilent Technologies</a></span> in <span class='location'>Folsom, CA</span> <time datetime="2004-07-01">(7/2004-9/2004)</time>. This internship allowed me to work as a part of the two-person team which developed the drivers for Agilent's new 6890N series Gas Chromatograph machine. These drivers, written using LabVIEW, enable arrays of Gas Chromatograph machines to be automated; including their injection sequences.
+      </li>
+      <li>
+        <span class='position_title'>Software Developer</span> - at <span class='employer'>S.A.I.</span> in <span class='location'>El Dorado Hills</span> <time datetime="2003-08-01">(8/2003-1/2004)</time>. This position required a meticulous understanding of Linux and SCO systems programming in conjunction with telecommunications terminology and PBX call record output specifications. I worked on extremely large sed scripts, and helped design a solid state network monitoring device with an embedded realtime Linux kernal.
+      </li>
+      <li>
+        <span class='position_title'>Linux Developer</span> - for <span class='employer'><a href="http://clm.ucdavis.edu/">UCDAVIS Lab Management</a></span>, <span class='location'>Davis, CA</span> <time datetime="1999-11-01">(11/1999-7/2000)</time>. The UCD Linux Development Project was created to port the university's computer lab services from HPUX to less expensive hardware running Linux.  Legacy code designed to monitor and improve network functionality for the labs and classrooms was ported from C to Perl.
+      </li>
+    </ul>
+  </dd>
+
+  <dt>Education</dt>
+  <dd class='degree'>Bachelor of Science, Computer Science</dd>
+  <dd class='university'>California State University, <span class='location'>Sacramento</span>, <time class='graduation_date' datetime='2007-05-26'>2007</time></dd>
+</dl>
+</section>
+</div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20043816-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
