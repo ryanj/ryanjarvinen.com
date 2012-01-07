@@ -33,7 +33,7 @@
             contact_html += "<li><a href='mailto:rya" + "n@r";
             contact_html += "yanjarvinen.com?subject=job%20availability'><img alt='email' src='images/contact/email_icon.png'/>rya" + "n@r";
             contact_html += "yanjarvine" + "n.com</a></li>";
-            contact_html += "<li><a href='http://twitter.com/ryanjarvi" + "nen'><img alt='twitter' src='images/contact/twitter_icon.png'/>";
+            contact_html += "<li><a href='http://twitter.com/ryan" + "j'><img alt='twitter' src='images/contact/twitter_icon.png'/>";
             contact_html += "@ryanjarvinen</a></li>";
             contact_html += "<li><a href='http://en.gravatar.com/rya" + "njarvinen'><img alt='gravatar' style='border-radius: 6px;-webkit-border-radius: 6px;-moz-border-radius:6px;height:2.5em;width:2.5em;' src='images/contact/gravatar_icon.png'/>";
             contact_html += "gravatar.com/ryanjarvinen</a></li>";
